@@ -1,22 +1,18 @@
+@font-face {
+    src: url( "assets/victoriaTypewriter.ttf" );
+    font-family: typewriter;
+}
 body {
   padding: 0px;
   margin: 0px;
-}
-
-img {
-  align: center;
-}
-label {
-  padding-right:10px;
+  font-family: typewriter;
 }
 #menu-bar {
   background-color: orange;
-  height: 60px;
+  height: 20px;
   border-radius: 0px 20px;
 }
 ul {
-  list-style: none;
-  background: #14b2e2;
   margin-top: -16px;
 }
 li {
@@ -33,13 +29,31 @@ li:last-child {
 }
 a {
   color: black;
-  text-decoration: none !important;
   display: block;
   text-align: center;
   position:relative;
+  overflow: hidden;
+  text-decoration: none;
 }
-a:hover {
-  color: yellow;
+a span {
+    position: relative;
+    z-index: 1;
+}
+a::before {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50% );
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+a:hover::before {
+    width: 300px;
+    height: 300px;
 }
 a:active {
   color: beige;
@@ -48,32 +62,22 @@ a:active {
 .container {
   clear: left;
   padding: 20px;
-  /*border: 2px dotted maroon;*/
   background-color: khaki;
   border-radius: 20px 0px;
 }
-.mnu_icon {
-  display: block;
-  height: 30px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+figure {
+    max-width: min-content;
+    margin: auto;
+    text-align: center;
 }
-#mnu_about_us {
-  background-image: url( "assets/imgs/address-book.svg" );
-}
-#mnu_rnnng_mvs {
-  background-image: url( "assets/imgs/hand-pointer.svg" );
-}
-#mnu_upcmng_mvs {
-  background-image: url( "assets/imgs/hand-point-right.svg" );
-}
-table {
-  width: 100%;
-}
-td {
-  text-align: center;
+figure > img {
+    max-width: inherit;
 }
 figcaption {
-    font-size: 2em;
+    font-size: 1em;
+    white-space: nowrap;
+}
+.preview {
+    height: 100px;
+    cursor: pointer;
 }

@@ -10,26 +10,17 @@
       <ul>
         <li>
           <a href="BmbyTlks.jsp?tabIndx=0">
-            <table>
-              <tr><td><span class="mnu_icon" id="mnu_about_us" align="center"></span></td></tr>
-              <tr><td>About us</td></tr>
-            </table>
+              <span>About us</span>
           </a>
         </li>
         <li>
           <a href="BmbyTlks.jsp?tabIndx=1">
-            <table>
-              <tr><td> <span class="mnu_icon" id="mnu_rnnng_mvs" align="center"></span></td></tr>
-              <tr><td>Movies screening</td></tr>
-            </table>
+              <span>Movies screening</span>
           </a>
         </li>
         <li>
           <a href="BmbyTlks.jsp?tabIndx=2">
-            <table>
-              <tr><td> <span class="mnu_icon" id="mnu_upcmng_mvs" align="center"></span></td></tr>
-              <tr><td>Upcoming movies</td></tr>
-            </table>
+              <span>Upcoming movies</span>
           </a>
         </li>
       </ul>

@@ -15,7 +15,7 @@ Configurations:
 ===============
   * For `contact us` support, one needs to configure their WEB-INF/web.xml with email username & password settings:
 ```
-	<web-app>
+<web-app>
 	<context-param>
 		<param-name>FROM_EMAIL_ID</param-name>
 		<param-value>LOGIN_ID</param-value>
@@ -34,4 +34,4 @@ Configurations:
 	</context-param>
 </web-app>
 ```
-	* In the above web.xml template, change the parameters `LOGIN_ID, LOGIN_PASSWORD, DSTNATION_ID, SMTP_HOST_ADDRESS` to match your local settings.
+In the above web.xml template, change the parameters `LOGIN_ID, LOGIN_PASSWORD, DSTNATION_ID, SMTP_HOST_ADDRESS` to match your local settings.
